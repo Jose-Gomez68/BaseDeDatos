@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BaseDeDatos</string>
+
+    <string name="hello">como estamos</string>
+    <!-- LETREROS PETS -->
+    <string name="Tab1">PETS</string>
+    <string name="tab2">PERFIL</string>
+    <!--LETREROS CARDVIEW-->
+    <string name="saludo">Como estas</string>
+    <string name="ContadorLike">6</string>
+    <string name="textview">TextView</string>
+    <string name="HuesoLike">1</string>
+    <string name="HuesoDorado">1</string>
+    <!--LETREROS MENNU-->
+    <string name="CONTACTO">CONTACTANOS</string>
+    <string name="ACERCA_DE">ACERCA DE</string>
+    <string name="user">USER</string>
+    <string name="Acerca"><font size="16"><b><big>ESTE APP ES SOLO CON FINES DE APRENDIZAJE
+    CUALQUIER PERSONA QUE DE MAL USO O DESEE APROPIARSE DE ELLA SERA
+        LLEVADO ANTE LA JUSTICIA</big></b> </font> </string>
+
+    <string name="comentario"><big>ENVIA TU COMENTARIO</big></string>
+    <string name="ButtonEnviar">ENVIAR</string>
+    <string name="TextA">ESCRIBE TU COMENTARIO......</string>
+    <string name="mail">Tu direccion email</string>
+    <string name="algo">TextView</string>
+
+    <string name="Likes">Likes</string>
+    <string name="Descripcion">Descripcion Larga</string>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--LO QUE HICE FUE POSE UN CONTENEDOR DENTRO DE EL MI CARDVIEW DENTRO OTRO CONTENEDOR DONDE TENDRE
+MI TEXT VIEW Y MI IMAGE VIEW ASI ES MAS FACIL LLAMAR Y METER EN MI RECYCLER VIEW
+Y CON EL ATRIBUTO PADIN LE DAMOS CONTORNO -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContendorPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardImage"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- </LinearLayout>-->
+
+
+            <ImageView
+                android:id="@+id/imgVer"
+                android:layout_width="296dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:contentDescription="@string/saludo"
+                android:src="@mipmap/ic_launcher_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TxV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginRight="165dp"
+                android:text="@string/saludo"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.214"
+                app:layout_constraintStart_toEndOf="@+id/ImgHuesoLike"
+                app:layout_constraintTop_toBottomOf="@+id/imgVer"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/ImgHuesoLike"
+                android:layout_width="34dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="332dp"
+                android:layout_marginRight="332dp"
+                android:contentDescription="@string/HuesoLike"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgVer"
+                app:srcCompat="@drawable/hueso2"
+                tools:ignore="VectorDrawableCompat"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ImgDorado"
+                android:layout_width="37dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="133dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="18dp"
+                android:contentDescription="@string/HuesoDorado"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.714"
+                app:srcCompat="@drawable/huesodorado" />
+
+            <TextView
+                android:id="@+id/ContadorLike"
+                android:layout_width="38dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="19dp"
+                android:hint="@string/ContadorLike"
+                android:text="@string/textview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/TxV1"
+                app:layout_constraintTop_toBottomOf="@+id/imgVer"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
